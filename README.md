@@ -1,3 +1,11 @@
+# Attributions and Reference Materials:
+
+1. API security methodology provided by Alexandro Perez in https://alexandroperez.github.io/mws-walkthrough/?1.4.mapbox-api-key
+
+
+
+
+
 # Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
