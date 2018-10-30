@@ -20,6 +20,8 @@ ul, li {
 a {
 	color: orange;
 	text-decoration: none;
+  /* adjust touch target size */
+  font-size: 1.4em;
 }
 a:hover, a:focus {
 	color: #3397db;
@@ -44,34 +46,54 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
+  /* padding adjusted */
+  padding: 20px 0 20px;
+  /* text align commented out */
+  /*text-align: center;*/
   text-transform: uppercase;
+  /* Flexbox parameter added */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  /* relative value added to height */
+  height: 10%;
   background-color: #252831;
   text-align:center;
+  /* Flexbox parameter added */
+  display: flex;
 }
 nav h1 {
   margin: auto;
+
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  /* adjust touch target size */
+  font-size: 1.7em;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+
+    /* padding commented out */
+    /*padding: 10px 40px 16px;*/
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 1.5em;
     margin: 0;
-    width: calc(50% - 80px);
+    /* text align parameter added */
+    text-align: center;
+  /* width adjuxted to 100% */
+    width: 100%;
+      /* Flexbox parameter added */
+  display: flex;
 }
 
 /* Display list items side by side */
@@ -106,9 +128,15 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  /* relative value added to height */
+  height: 15%;
   background-color: #3397DB;
   align-items: center;
+  /*padding: 15px;*/
+  /* added Flexbox parameters */
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .filter-options h2 {
   color: white;
@@ -136,6 +164,9 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  /* added Flexbox parameters */
+  display: flex;
+  flex-wrap: wrap;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -191,11 +222,14 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  /* height reduced to 25% */
+  height: 25%;
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  /* width increased to 100% */
+  width: 100%;
+  
 }
 .inside #map {
   background-color: #ccc;
@@ -204,8 +238,9 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: relative;
+  /* width doubled */
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -239,11 +274,15 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 240px 30px 30px;
+  width: 90%;
+  /* added Flexbox parameters */
+  display: flex;
+  flex-direction: column;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /* side padding adjusted down */
+  padding: 30px 20px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -255,17 +294,24 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  /* Flexbox parameters added */
+  display: flex;
+  flex-direction: column;
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
+
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
   padding: 0 20px 20px;
-  position: relative;
+  /* positon element commented out */
+  /*position: relative;*/
   width: 85%;
+  /* Flexbox parameter added */
+  display: flex;
 }
 #reviews-list li p {
   margin: 0 0 10px;

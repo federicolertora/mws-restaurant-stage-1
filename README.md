@@ -2,7 +2,11 @@
 
 1. API security methodology provided by Alexandro Perez in https://alexandroperez.github.io/mws-walkthrough/?1.4.mapbox-api-key
 
+2. Relative positioning and sizing methodology: https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
 
+3. Flexbox methodology used: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+4. Rules for positioning adjustments: https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
 
 
 
