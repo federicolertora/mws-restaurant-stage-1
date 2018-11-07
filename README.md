@@ -8,6 +8,8 @@
 
 4. Rules for positioning adjustments: https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
 
+5. Reference for CSS media query rules: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
 
 
 # Mobile Web Specialist Certification Course

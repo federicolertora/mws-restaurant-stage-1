@@ -60,6 +60,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
+  position: relative;
   width: 100%;
   /* relative value added to height */
   height: 10%;
@@ -90,10 +91,10 @@ nav h1 a {
     margin: 0;
     /* text align parameter added */
     text-align: center;
-  /* width adjuxted to 100% */
-    width: 100%;
-      /* Flexbox parameter added */
-  display: flex;
+    /* width adjuxted to 96.9% */
+    width: 96.9%;
+    /* Flexbox parameter added */
+    display: flex;
 }
 
 /* Display list items side by side */
@@ -121,18 +122,22 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
+  /* Map height changed to 250px */
+  height: 250px;
   width: 100%;
   background-color: #ccc;
+  display: flex;
 }
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
   /* relative value added to height */
-  height: 15%;
+  height: 25%;
   background-color: #3397DB;
   align-items: center;
-  /*padding: 15px;*/
+  /* Padding adjusted */
+  padding: 10px 0 10px ;
   /* added Flexbox parameters */
   display: flex;
   flex-wrap: wrap;
@@ -162,11 +167,12 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 45px 15px 45px;
   text-align: center;
   /* added Flexbox parameters */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -215,20 +221,23 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   /* height reduced to 25% */
-  height: 25%;
-  position: fixed;
-  right: 0;
+  /* height: 5%;*/
+  position: relative;
+  /* right setting commented out */
+  /* right: 0;*/
   top: 80px;
-  /* width increased to 100% */
+  /* width changed to 100% */
   width: 100%;
+  /*display: flex;*/
   
 }
 .inside #map {
@@ -272,13 +281,15 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
+  /* Border bottom commented out */
+  /*border-bottom: 1px solid #d9d9d9;*/
   border-top: 1px solid #fff;
-  padding: 240px 30px 30px;
-  width: 90%;
+  padding: 30px 30px 30px;
+  width: 100%;
   /* added Flexbox parameters */
   display: flex;
   flex-direction: column;
+  align-content: center | stretch;
 }
 #reviews-container {
   /* side padding adjusted down */
