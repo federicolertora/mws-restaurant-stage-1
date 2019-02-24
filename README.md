@@ -10,6 +10,7 @@
 
 5. Reference for CSS media query rules: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 
+6. Reference for resectioning map element to header: https://www.youtube.com/watch?v=uxmB8MlO3m8&t=0s&list=LLanbTOqGzRq5Bdur3FjWlpA&index=3
 
 
 
