@@ -12,6 +12,8 @@
 
 6. Reference for resectioning map element to header: https://www.youtube.com/watch?v=uxmB8MlO3m8&t=0s&list=LLanbTOqGzRq5Bdur3FjWlpA&index=3
 
+7. Reference for formating of skip links: https://classroom.udacity.com/nanodegrees/nd024/parts/641b7f6f-d7cb-4862-a3b2-28c6ee21e596/modules/a33d818c-c5ce-40be-903d-08fa3c8a13a3/lessons/3f4a8855-31f7-412e-8ad2-6f4e243f2ef8/concepts/79590516900923
+
 
 
 

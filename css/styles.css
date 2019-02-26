@@ -58,6 +58,23 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   align-items: center;
 
 }
+
+/* ====================== Skip link ====================== */
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  background: white;
+  color: blue;
+  padding: 10px;
+  z-index: 90;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+
 /* ====================== Navigation ====================== */
 nav {
   position: relative;
