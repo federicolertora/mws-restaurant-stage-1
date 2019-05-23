@@ -16,6 +16,10 @@
 
 8. Reference for declaring a service worker via a link tag: https://philna.sh/blog/2016/08/17/install-a-service-worker-declaratively/
 
+9. Reference for including the error code in a failed registration console log: https://www.youtube.com/watch?v=ksXwaWHCW6k  at minute 11:11
+
+10. BUGFIX: Get rid of favicon error: https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error
+
 
 
 

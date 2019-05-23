@@ -6,15 +6,14 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
 
-  <!-- adding link pointer to service worker file -->
-  <!-- <link rel="serviceworker" href="/sw.js" scope="/udacity-mws-restaurant-reviews-project-stage-1/"> -->
 
-    <script type="application/javascript" charset="utf-8" src="js/swregistration.js"></script>
+  <!-- BUGFIX: Favicon error mitigation -->
+  <link rel="shortcut icon" href="#">
 
 
-  <!-- link to media queries page added -->
-<!--   <link rel="stylesheet" media="screen and (min-width: 1015px)" href="css/media-queries.css"> -->
   <title>Restaurant Reviews</title>
+
+
 </head>
 
 <body>
@@ -54,6 +53,7 @@
         <div id="map"></div>
       </section>
      -->
+
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
@@ -79,6 +79,27 @@
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
+
+  <!-- adding link pointer to service worker file -->
+
+    <!-- <link rel="serviceworker" href="/sw.js" scope="/udacity-mws-restaurant-reviews-project-stage-1/"> -->
+
+    <script type="application/javascript" src="/js/swregistration.js"></script>
+
+      <!-- charset="utf-8"  -->
+
+
+
+  
+
 </body>
 
 </html>
+
+
+
+<!-- PAST CODE SEGMENTS -->
+
+    <!-- link to media queries page added -->
+
+    <!--   <link rel="stylesheet" media="screen and (min-width: 1015px)" href="css/media-queries.css"> -->
