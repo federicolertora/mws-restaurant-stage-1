@@ -20,7 +20,7 @@
 
 10. BUGFIX: Get rid of favicon error: https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error
 
-
+11. ARIA label rules: https://cccaccessibility.org/web/web-developer-tutorials/aria-labelledby-vs-aria-describedby-vs-aria-label
 
 
 # Mobile Web Specialist Certification Course
