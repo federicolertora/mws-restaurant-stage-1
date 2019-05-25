@@ -2,17 +2,19 @@
 
 
 
-var staticCacheName = 'restaurant-reviews-static-v1';
+var staticCacheName = 'restaurant-reviews-static-v4';
 var urlForCache = 					[
 
+						'/',
 						'index.html',
 						'restaurant.html',
 						'/css/styles.css',
 						'/js/main.js',
 						'/js/restaurant_info.js',
 						'/js/dbhelper.js',
-						'/data/restaurants.json'
-					]
+						'/data/restaurants.json',
+						'/img/'
+					];
 
 
 self.addEventListener('install', function(event) {
@@ -53,12 +55,28 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
 
-	console.log(event.request);
+		// console.log(event.request);
 
 	event.respondWith(caches.match(event.request).then(function(response) {
 
-			if(response) return response;
-			return fetch(event.request);
+
+			if (response) {
+
+				return response;
+
+			} else {
+				
+				return fetch(event.request);
+
+			}
+
+			
+
+			// return cachedResponse || fetch(event.request);
+
+			// if(response) return response;
+
+			// return fetch(event.request);
 
 		}) 
 	);
