@@ -14,7 +14,7 @@ var urlForCache = 					[
 						'/js/dbhelper.js',
 						'/data/restaurants.json',
 						'/img/'
-					];
+					]
 
 
 self.addEventListener('install', function(event) {
@@ -55,22 +55,31 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
 
-		// console.log(event.request);
-
-	event.respondWith(caches.match(event.request).then(function(response) {
-
+	event.respondWith(caches.match(event.request)
+		.then(function(response) {
 
 			if (response) {
 
 				return response;
 
 			} else {
-				
+
 				return fetch(event.request);
 
 			}
+		}) 
+	);
+});
 
-			
+
+
+
+
+
+
+// PAST CODE SEGMENTS:
+
+		// console.log(event.request);
 
 			// return cachedResponse || fetch(event.request);
 
@@ -78,13 +87,6 @@ self.addEventListener('fetch', function(event) {
 
 			// return fetch(event.request);
 
-		}) 
-	);
-});
-
-
-
-// PAST CODE SEGMENTS:
 
 
 	// console.log('Hello! I am a service worker!');
