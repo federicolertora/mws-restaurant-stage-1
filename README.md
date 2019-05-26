@@ -22,6 +22,8 @@
 
 11. ARIA label rules: https://cccaccessibility.org/web/web-developer-tutorials/aria-labelledby-vs-aria-describedby-vs-aria-label
 
+12. BUGFIX: Corrected syntax of service worker fetch event: https://developers.google.com/web/fundamentals/primers/service-workers/
+
 
 # Mobile Web Specialist Certification Course
 ---
