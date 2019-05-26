@@ -26,6 +26,8 @@
 
 13. Use of HTML lang attribute: https://www.w3.org/International/questions/qa-html-language-declarations
 
+14. Adding alt atribute to images via JavaScript: https://www.w3schools.com/jsref/prop_img_alt.asp
+
 
 # Mobile Web Specialist Certification Course
 ---
