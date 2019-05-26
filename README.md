@@ -24,6 +24,8 @@
 
 12. BUGFIX: Corrected syntax of service worker fetch event: https://developers.google.com/web/fundamentals/primers/service-workers/
 
+13. Use of HTML lang attribute: https://www.w3.org/International/questions/qa-html-language-declarations
+
 
 # Mobile Web Specialist Certification Course
 ---
