@@ -32,6 +32,10 @@
 
 16. BUGFIX: Fix for readability issue in restaurant.html reviews container: https://css-tricks.com/almanac/properties/f/flex-direction/
 
+17. Reference for tabindex attribute added to HTML files: https://www.w3schools.com/tags/att_tabindex.asp
+
+
+
 
 # Mobile Web Specialist Certification Course
 ---
