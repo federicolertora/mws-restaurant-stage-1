@@ -28,6 +28,8 @@
 
 14. Adding alt atribute to images via JavaScript: https://www.w3schools.com/jsref/prop_img_alt.asp
 
+15. BUGFIX: Fix for body overflow issue in restaurant.html: https://css-tricks.com/findingfixing-unintended-body-overflow/
+
 
 # Mobile Web Specialist Certification Course
 ---

@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/*FORCE EXPOSE OVERFLOW*/
+/** {
+    outline: 3px solid red;
+}*/
+
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -11,6 +17,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
+
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -95,23 +102,23 @@ nav h1 a {
   /* adjust touch target size */
   font-size: 1.7em;
   font-weight: 200;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 #breadcrumb {
 
     /* padding commented out */
-    /*padding: 10px 40px 16px;*/
-    list-style: none;
-    background-color: #eee;
-    font-size: 1.5em;
-    margin: 0;
+/*padding: 10px 40px 16px;*/
+list-style: none;
+background-color: #eee;
+font-size: 1.5em;
+margin: 0;
     /* text align parameter added */
-    text-align: center;
+text-align: center;
     /* width adjuxted to 96.9% */
-    width: 96.9%;
+/* width: 96.9%; */
     /* Flexbox parameter added */
-    display: flex;
+display: flex;
 }
 
 /* Display list items side by side */
@@ -301,8 +308,8 @@ nav h1 a {
   /* Border bottom commented out */
   /*border-bottom: 1px solid #d9d9d9;*/
   border-top: 1px solid #fff;
-  padding: 30px 30px 30px;
-  width: 100%;
+  padding: 30px 10px 30px;
+  /* width: 100%; */
   /* added Flexbox parameters */
   display: flex;
   flex-direction: column;
