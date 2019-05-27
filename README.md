@@ -30,6 +30,8 @@
 
 15. BUGFIX: Fix for body overflow issue in restaurant.html: https://css-tricks.com/findingfixing-unintended-body-overflow/
 
+16. BUGFIX: Fix for readability issue in restaurant.html reviews container: https://css-tricks.com/almanac/properties/f/flex-direction/
+
 
 # Mobile Web Specialist Certification Course
 ---

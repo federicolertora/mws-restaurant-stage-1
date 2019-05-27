@@ -337,7 +337,7 @@ display: flex;
   background-color: #fff;
   border: 2px solid #f3f3f3;
 
-  display: block;
+  /*display: block;*/
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
@@ -347,6 +347,8 @@ display: flex;
   width: 85%;
   /* Flexbox parameter added */
   display: flex;
+  flex-direction: column;
+
 }
 #reviews-list li p {
   margin: 0 0 10px;
