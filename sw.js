@@ -2,7 +2,7 @@
 
 
 
-var staticCacheName = 'restaurant-reviews-static-v5';
+var staticCacheName = 'restaurant-reviews-static-v11';
 var urlForCache = 					[
 
 						'/',
@@ -53,20 +53,29 @@ self.addEventListener('activate', function(event) {
 
 
 
+// 
+
+
+
 self.addEventListener('fetch', function(event) {
+
 
 	event.respondWith(caches.match(event.request)
 		.then(function(response) {
 
-			if (response) {
 
-				return response;
+			return response || fetch(event.request);
 
-			} else {
 
-				return fetch(event.request);
+			// if (response) {
 
-			}
+			// 	return response;
+
+			// } else {
+
+			// return fetch(event.request);
+
+			// }
 		}) 
 	);
 });
@@ -78,6 +87,37 @@ self.addEventListener('fetch', function(event) {
 
 
 // PAST CODE SEGMENTS:
+
+
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     caches.open(staticCacheName).then(function(cache) {
+//       return fetch(event.request).then(function(response) {
+//         cache.put(event.request, response.clone());
+//         return response;
+//       });
+//     })
+//   );
+// });
+
+
+
+
+// self.addEventListener('fetch', function(event) {
+
+// console.log(event.request.url);
+
+// event.respondWith(
+
+// caches.match(event.request).then(function(response) {
+
+// return response || fetch(event.request);
+
+// })
+
+// );
+
+// });
 
 		// console.log(event.request);
 

@@ -4,6 +4,8 @@
 
 if (navigator.serviceWorker) {
 	navigator.serviceWorker.register('/sw.js').then(function(registration){
+		// Cache-Control: max-age=0;
+		// updateViaCache: 'all';
 		console.log('yer registered dude');
 	}).catch(function(err) {
 		console.log(`NO REGISTRATION FOR YOU!!!  ERROR IS: ${err}`);
@@ -14,6 +16,9 @@ if (navigator.serviceWorker) {
 
 
 // PAST CODE SEGMENTS:
+
+
+// , {scope: '/'}
 
 	// if (!navigator.serviceWorker) return;
 	// 	navigator.serviceWorker.register('/sw.js');	
