@@ -34,6 +34,10 @@
 
 17. Reference for tabindex attribute added to HTML files: https://www.w3schools.com/tags/att_tabindex.asp
 
+18. BUGFIX: Service worker not calling from restaurant.html page - service worker call added
+
+19. Reference for adding ARIA parameters to breadcrumb and map elements in restaurant.html page: https://a11yproject.com/posts/getting-started-aria/
+
 
 
 

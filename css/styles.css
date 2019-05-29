@@ -114,11 +114,11 @@ background-color: #eee;
 font-size: 1.5em;
 margin: 0;
     /* text align parameter added */
-text-align: center;
+text-align: left;
     /* width adjuxted to 96.9% */
-/* width: 96.9%; */
+ width: 96.9%; 
     /* Flexbox parameter added */
-display: flex;
+/*display: flex;*/
 }
 
 /* Display list items side by side */

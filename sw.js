@@ -2,7 +2,7 @@
 
 
 
-var staticCacheName = 'restaurant-reviews-static-v11';
+var staticCacheName = 'restaurant-reviews-static-v14';
 var urlForCache = 					[
 
 						'/',

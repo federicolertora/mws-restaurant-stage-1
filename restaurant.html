@@ -41,18 +41,28 @@
     
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1>
+        <a href="/">Restaurant Reviews</a>
+      </h1>
     </nav>
+
+
+
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb"  aria-label="Breadcrumb">
-      <li><a href="/">Home</a></li>
-    </ul>
+    <nav>
+      <ul id="breadcrumb"  aria-label="Breadcrumb" role="navigation">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+
     <!-- End breadcrumb -->
     <!-- End nav -->
+
+
     <!-- map-container moved to header -->
     <!-- Beginning map -->
     <section id="map-container" aria-label="interactive map">
-      <div id="map"></div>
+      <div id="map" aria-label="location" role="application"></div>
     </section>
     <!-- End map -->
   </header>
@@ -103,7 +113,7 @@
 
   <!-- add service worker call to restaurant page -->
 
-  <script type="application/javascript" src="/js/swregistration.js"></script>
+    <script type="application/javascript" src="/js/swregistration.js"></script>
 
 
 </body>
