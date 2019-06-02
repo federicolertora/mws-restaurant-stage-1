@@ -38,6 +38,8 @@
 
 19. Reference for adding ARIA parameters to breadcrumb and map elements in restaurant.html page: https://a11yproject.com/posts/getting-started-aria/
 
+20. Reference for adding clone syntax to service worker fetch method: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
+
 
 
 

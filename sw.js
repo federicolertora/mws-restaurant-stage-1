@@ -14,7 +14,7 @@ var urlForCache = 					[
 						'/js/dbhelper.js',
 						'/data/restaurants.json',
 						'/img/'
-					]
+					];
 
 
 self.addEventListener('install', function(event) {
@@ -52,32 +52,17 @@ self.addEventListener('activate', function(event) {
 });
 
 
-
-// 
-
-
-
 self.addEventListener('fetch', function(event) {
-
-
-	event.respondWith(caches.match(event.request)
-		.then(function(response) {
-
-
-			return response || fetch(event.request);
-
-
-			// if (response) {
-
-			// 	return response;
-
-			// } else {
-
-			// return fetch(event.request);
-
-			// }
-		}) 
-	);
+  event.respondWith(
+    caches.open(staticCacheName).then(function(cache) {
+      return cache.match(event.request).then(function (response) {
+        return response || fetch(event.request).then(function(response) {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
 });
 
 
@@ -85,8 +70,65 @@ self.addEventListener('fetch', function(event) {
 
 
 
-
 // PAST CODE SEGMENTS:
+
+
+
+// self.addEventListener('fetch', function(event) {
+
+// 	event.respondWith(caches.match(event.request)
+// 		.then(function(response) {
+
+// 			if (response) {
+
+// 				return response;
+
+// 			}
+
+// 			return fetch(event.request);
+
+// 			}
+// 		) 
+// 	);
+// });
+
+
+
+
+// self.addEventListener("fetch", function(event) { 
+// 	event.respondWith( 
+// 		return caches.match(event.request)
+// 			.then(function (response) { 
+// 				return response || fetch(event.request)
+// 			.then(function(response) { 
+// 				cache.put(event.request, response.clone());
+// 				return response; 
+// 			}); 
+// 		}) 
+// 	); 
+// });
+
+
+
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     caches.match(event.request).then(function(resp) {
+//       return resp || fetch(event.request).then(function(response) {
+//         caches.open(staticCacheName).then(function(cache) {
+//           cache.put(event.request, response.clone());
+//         });
+//         return response;
+//       });
+//     })
+//     // .catch(function() {
+//     //   return caches.match('/sw-test/gallery/myLittleVader.jpg');
+//     // }
+//     // )
+//   );
+// });
+
+			// return response || fetch(event.request);
+
 
 
 // self.addEventListener('fetch', function(event) {
