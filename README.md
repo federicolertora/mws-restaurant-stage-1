@@ -40,6 +40,10 @@
 
 20. Reference for adding clone syntax to service worker fetch method: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
 
+21. Reference for removing query from restaurant.html and index.html pages in service worker: https://developer.mozilla.org/en-US/docs/Web/API/Cache/match
+
+
+
 
 
 
