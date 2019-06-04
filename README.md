@@ -42,7 +42,13 @@
 
 21. Reference for removing query from restaurant.html and index.html pages in service worker: https://developer.mozilla.org/en-US/docs/Web/API/Cache/match
 
+22. References for adding ARIA attribute to View Details element in index.html:
+	https://javascript.info/dom-attributes-and-properties
 
+	https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute
+
+	https://www.w3.org/TR/wai-aria/#aria-label
+	
 
 
 
