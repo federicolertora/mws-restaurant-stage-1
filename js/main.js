@@ -168,8 +168,8 @@ createRestaurantHTML = (restaurant) => {
 
   li.append(image);
 
-
-  const name = document.createElement('h1');
+  // changed from h1 to h2 for semantic consistency
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 

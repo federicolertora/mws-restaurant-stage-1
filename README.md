@@ -48,8 +48,8 @@
 	https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute
 
 	https://www.w3.org/TR/wai-aria/#aria-label
-	
 
+23. Reference for fixing HTML semantic of restaurant names to h2: https://html.com/semantic-markup/
 
 
 
