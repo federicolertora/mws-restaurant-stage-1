@@ -161,6 +161,15 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = ("restaurant-img")
 
+  // LAZY LOAD SOMEWHERE IN HERE
+
+  const restaurantLazyLoad = new LazyLoad ({
+    // elements_selector: ".img"
+    // load_delay: 1000
+  });
+
+
+
   // Added alt atribute for images
   image.alt = 'Picture of ' + restaurant.name + 'restaurant.';
 
